@@ -22,6 +22,39 @@
        <input type="radio" name="sex" value="male"> <span>Male</span>
        <input type="radio" name="sex" value="Female"> Female
        <br>       
+       <br>   
+       <span>Current status</span>    
+       <br>
+       <input type="checkbox" name="status" value="student"><span>Student</span>
+       <br>
+       <input type="checkbox" name="status" value="employed"><span>Employed</span>
+       <br>
+       <input type="checkbox" name="status" value="unemployed"><span>Unemployed</span>
+       <br><br>
+       <span>Month and Year of birth</span>
+       <br>       
+       <select name="month">
+	       <option value="january">January</option>
+	       <option value="february">February</option>
+	       <option value="march">March</option>
+       </select>
+       <select name="year">
+           <option value="1983">1983</option>
+           <option value="1984">1984</option>
+           <option value="1985">1985</option>
+           <option value="1986">1986</option>
+           <option value="1987">1987</option>
+       </select>
+       <br><br>
+       <span>Skills and Technologies</span>
+       <br>
+       <select name="skills" multiple size="10">
+       <optgroup label="Tech skills">
+	    <option value="html">HTML</option>
+	    <option value="css">CSS</option>
+	    <option value="javascript">Javascript</option>
+       </optgroup>
+        </select>
     </form>
 </body>
 </html>
