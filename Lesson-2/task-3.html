@@ -5,19 +5,26 @@
     <title>task-3-forms</title>
 </head>
 <body>
+    
     <form action="">
+     <fieldset>
+      <legend>Form for task</legend>
+      <label>
        <span>Name</span>
        <br>
-       <input type="text" name="Name" value="Name">
+       <input type="text" name="Name" placeholder="Name" required autofocus>
+    </label>
        <br>
        <br>
+    <label>
        <span>Email</span>
        <br>
        <input type="text" name="Email"
-       placeholder="E-mail">
+       placeholder="E-mail" required>
+    </label>
        <br>
        <br>
-       <span>Sex</span>
+       <span title="Please enter your sex">Sex</span>
        <br>
        <input type="radio" name="sex" value="male"> <span>Male</span>
        <input type="radio" name="sex" value="Female"> Female
@@ -27,7 +34,7 @@
        <br>
        <input type="checkbox" name="status" value="student"><span>Student</span>
        <br>
-       <input type="checkbox" name="status" value="employed"><span>Employed</span>
+       <input type="checkbox" name="status" value="employed" checked><span>Employed</span>
        <br>
        <input type="checkbox" name="status" value="unemployed"><span>Unemployed</span>
        <br><br>
@@ -48,13 +55,33 @@
        <br><br>
        <span>Skills and Technologies</span>
        <br>
-       <select name="skills" multiple size="10">
+    <select name="skills" multiple size="10">
        <optgroup label="Tech skills">
-	    <option value="html">HTML</option>
-	    <option value="css">CSS</option>
+	    <option value="html" selected>HTML</option>
+	    <option value="css" selected>CSS</option>
 	    <option value="javascript">Javascript</option>
+        <option value="git">Git</option>
        </optgroup>
-        </select>
+       <optgroup label="Soft skills">
+        <option value="timeManagement">Time management</option>
+        <option value="proactivity">Proactivity</option>
+        <option value="teamwork">Teamwork</option>
+        <option value="leadership">Leadership</option>
+       </optgroup>
+    </select>
+    <br><br>
+    <span>Photo</span>
+    <br>
+    <input type="file">
+    <br><br>
+    <span>Comments</span>
+    <br>
+    <textarea name="textarea" id="" cols="30" rows="5"></textarea>
+    <br>
+    <input type="submit" value="Save">
+    <input type="reset" value="Reset">
+    </fieldset>
     </form>
+    
 </body>
 </html>
