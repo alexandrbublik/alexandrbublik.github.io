@@ -1,0 +1,11 @@
+:link[href*="http"] {
+    color: #f70;
+}
+
+:link[href*="google"] {
+    color: #666;
+}
+
+:link[target="_blank"]:after {
+    content:  "\0021F1";
+}
