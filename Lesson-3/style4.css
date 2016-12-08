@@ -6,6 +6,10 @@
     color: #666;
 }
 
+:link[target="_blank"]{
+    text-decoration: none;
+}
 :link[target="_blank"]:after {
     content:  "\0021F1";
+    text-decoration: none;
 }
