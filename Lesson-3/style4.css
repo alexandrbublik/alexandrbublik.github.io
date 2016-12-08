@@ -6,6 +6,7 @@
     color: #666;
 }
 
-:link[target="_blank"]:after {
+[target="_blank"]:after{
     content: "\0021F1";
+    position: absolute;
 }
