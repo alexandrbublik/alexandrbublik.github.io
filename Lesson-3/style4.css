@@ -1,8 +1,10 @@
-:link[href*="http"] {
+a[href*="http"]:link,
+a[href*="http"]:visited{
     color: #f70;
 }
 
-:link[href*="google"] {
+a[href*="google"]:link,
+a[href*="google"]:visited{
     color: #666;
 }
 
