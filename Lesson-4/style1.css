@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div.wrapper-menu{
+    background-color: #A64DFF;  
+    width: 100%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5); /* Параметры тени */
+    margin: 20px 0;/*Отделил от верха*/
+}
+ul.menu {
+    width: 900px;
+    margin: 0 auto;
+    padding: 0 5px;/*Отлепил слева и справа текст*/
+}
+.limenu {
+	display:inline-block;
+    padding: 5px 10px;
+}
+.limenu:hover{
+	background: #EEEEEE;  
+}
+.limenu:hover>.amenu {
+	color: #A2A2A5; 
+}
+.amenu {	
+    font-family: Economica;
+    font-weight: bold;    
+    font-size: 1.2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
