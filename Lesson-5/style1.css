@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div.wrapper-menu{
+    background-color: #A64DFF;  
+    width: 100%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5); /* Параметры тени */
+    margin: 20px 0;/*Отделил от верха*/
+    
+}
+ul.menu {
+    width: 900px;
+    margin: 0 auto;
+    padding: 0 5px;/*Отлепил слева и справа текст*/
+    position: relative;
+}
+.limenu {
+	display:inline-block;
+}
+.amenu:hover{
+	background: #EEEEEE;
+    color: #A2A2A5;
+}
+.amenu {	
+    font-family: Economica;
+    font-weight: bold;    
+    font-size: 1.2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    display:inline-block;
+    padding: 5px 10px;
+}
+
+/*submenu*/
+
+div.submenu-wrapper{
+    width: 100%;
+    background: #EEEEEE;
+    position: absolute;
+}
+ul.submenu {
+	position: absolute;
+    width: 900px;
+    left: 0;
+    
+    -visibility: hidden;
+}
+.submenu>li{
+	display: inline-block;
+    text-transform: capitalize;
+}
+.submenu>li>a{
+    -font-family: Impact;
+    
+    color: #A2A2A5;
+}
