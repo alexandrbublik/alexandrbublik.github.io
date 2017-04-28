@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;   
+}
+div.wrapper-menu{
+    background-color: #1AA4FF;  
+    width: 100%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5); /* Параметры тени */
+    margin: 20px 0 0;/*Отделил от верха*/    
+}
+ul.menu {
+    width: 900px;
+    margin: 0 auto;
+    padding: 0 5px;/*Отлепил слева и справа текст*/    
+}
+.limenu,
+.amenu{
+	display:inline-block;
+}
+li.limenu:hover {	
+    background: #EEEEEE;
+}
+li.limenu:hover a.amenu{
+    color: #A2A2A5;
+}
+a.amenu {
+    font-family: Economica;
+    font-weight: bold;    
+    font-size: 1.2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    padding: 5px 10px;
+}
+
+/*submenu*/
+.sub-wrapper {
+	position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: #EEEEEE;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2); /* Параметры тени */
+    visibility: hidden;
+}
+ul.submenu{
+    width: 900px;
+    margin: 0 auto;
+    padding: 0 5px;
+    text-align: center;
+}
+ul.submenu>li,
+ul.submenu a{
+    display: inline-block;
+    
+}
+ul.submenu a{
+    font-family: Arial;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #A2A2A5;
+    padding: 5px 10px;    
+}
+ul.submenu a:hover{
+    background-color: #d2d2d2;
+    color:#FFFFFF;
+}
+li.limenu:hover .sub-wrapper{
+    visibility: visible;
+}
+
+/*
+.test {
+	width: 600px;
+    height: 600px;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+*/
+
+@media (max-width:720px){
+    ul.menu,
+    ul.submenu{
+        width: 600px;
+    }
+}
