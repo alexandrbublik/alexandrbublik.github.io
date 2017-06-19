@@ -68,15 +68,6 @@ li.limenu:hover .sub-wrapper{
     visibility: visible;
 }
 
-/*
-.test {
-	width: 600px;
-    height: 600px;
-    border: 1px solid black;
-    margin: 0 auto;
-}
-*/
-
 @media (max-width:720px){
     ul.menu,
     ul.submenu{
