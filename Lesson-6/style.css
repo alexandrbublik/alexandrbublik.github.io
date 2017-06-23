@@ -3,27 +3,36 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .clear::after{
     content: '';
     display: table;
     clear: both;
 }
 div.offers{
-    -border: 1px solid red;
     margin: 20px auto;
     padding: 15px 8px;
-    width: 908px;
+    width: 908px;    
+    font-family: Trebuchet MS;    
 }
+
+div.offers>h2{
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 22px;
+    color: #35495A;
+}
+
 .box{
     float: left;    
     width: 296px;    
     border-radius: 5px;
-    font-family: Trebuchet MS;
     box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
 }
 div.box-standart,
 div.box-ultimate {
-    margin-top: 10px;
+    margin-top: 9px;
 }
 .box-bestvalue{
     border: 4px solid #ee8129;
@@ -47,10 +56,8 @@ div.box-ultimate>div.box-head{
     padding: 23px 0 24px;
 }
 .box-head {
-	text-transform: uppercase;
-    
-    color: #FFFFFF;
-       
+	text-transform: uppercase;    
+    color: #FFFFFF;       
     font-weight: bold;
     font-size: 1.5em;
     text-align: center;
@@ -116,25 +123,17 @@ div.list>ul>li:before{
     top: 2px;
 }
 
-/*    input*/
+/*input*/
 a.button{
     display: block;
-    text-align: center;
-    margin: 17px 18px 32px; 
+    text-align: center;     
     padding: 12px 0;
     color: white;
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
-    text-decoration: none;
-    background-color: #ee8129;
-    font-family: Trebuchet MS;
-    box-shadow: 0px 3px 0px rgba(179,86,11,1);
+    text-decoration: none;    
     border-radius: 5px;    
-}
-a.button:hover{
-    background-color: #d97524;
-    
 }
 
 .box-standart a.button,
@@ -143,17 +142,31 @@ a.button:hover{
     margin: 17px 18px 22px;
     box-shadow: 0px 3px 0px rgba(19,66,107,1);
 }
+.box-bestvalue a.button{
+    margin: 17px 18px 32px;
+    background-color: #ee8129;
+    box-shadow: 0px 3px 0px rgba(179,86,11,1);
+}
+
 .box-standart a.button:hover,
 .box-ultimate a.button:hover{
     background-color: #135188;
 }
+
+.box-bestvalue a.button:hover{
+    background-color: #d97524;    
+}
+
+a.button:active{
+    box-shadow: none;
+}
+
 .box-standart a.button:active,
 .box-ultimate a.button:active{
     margin: 20px 18px 19px;
-    background-color: #13426B;
+    background-color: #135188;
 }
-a.button:active{
+.box-bestvalue a.button:active{
     background-color: #d97524;
-    box-shadow: none;
     margin: 20px 18px 29px;
 }
