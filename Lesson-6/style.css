@@ -9,7 +9,7 @@
     clear: both;
 }
 div.offers{
-    border: 1px solid red;
+    -border: 1px solid red;
     margin: 20px auto;
     padding: 15px 8px;
     width: 908px;
@@ -135,6 +135,22 @@ a.button{
 a.button:hover{
     background-color: #d97524;
     
+}
+
+.box-standart a.button,
+.box-ultimate a.button{
+    background-color: #2F70A8;
+    margin: 17px 18px 22px;
+    box-shadow: 0px 3px 0px rgba(19,66,107,1);
+}
+.box-standart a.button:hover,
+.box-ultimate a.button:hover{
+    background-color: #135188;
+}
+.box-standart a.button:active,
+.box-ultimate a.button:active{
+    margin: 20px 18px 19px;
+    background-color: #13426B;
 }
 a.button:active{
     background-color: #d97524;
