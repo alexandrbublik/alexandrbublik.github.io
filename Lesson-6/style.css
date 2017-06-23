@@ -13,14 +13,15 @@ div.offers{
     margin: 20px auto;
     padding: 15px 8px;
     width: 908px;    
-    font-family: Trebuchet MS;    
+    font-family: Trebuchet MS;  
 }
 
 div.offers>h2{
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 40px;
-    font-size: 22px;
+    margin-bottom: 64px;
+    font-size: 30px;
+    line-height: 25px;
     color: #35495A;
 }
 
@@ -59,7 +60,7 @@ div.box-ultimate>div.box-head{
 	text-transform: uppercase;    
     color: #FFFFFF;       
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 24px;
     text-align: center;
 }
 .box-head>span,
@@ -105,7 +106,7 @@ div.price{
 .list {
 	margin: 22px 14px 0;
     color: #888c94;
-    
+    font-size: 15px;
 }
 div.list>ul>li{
     list-style-type: none;
