@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clear::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/*Adding Fonts*/
+@font-face{
+    font-family: 'Poiret One';
+    src: url('Fonts/PoiretOne-Regular.ttf');
+}
+@font-face{
+    font-family: 'Futura Bk BT';
+    src: url('Fonts/FuturaBkBT.ttf');
+}
+@font-face{
+    font-family: 'Futura Md BT';
+    src: url('Fonts/FuturaMdBT.ttf');
+}
+/*Adding Fonts End*/
+
+/*Logo*/
+.logo{
+    text-transform: uppercase;
+    color: #3070a8;
+    font-family: 'Futura Md BT', Arial, sans-serif;
+    font-size: 36px;
+}
+.logo span{
+    font-family: 'Futura Bk BT', Arial, sans-serif;
+    color: #ee8129;
+    text-transform: capitalize;
+}
+/*****/
