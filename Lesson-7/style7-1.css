@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.sivtsev {
+    margin: 4px auto;
+    color: transparent;
+    text-shadow: 1px 1px 5px #555555;
+    font-family: Arial, sans-serif;   
+    width: 475px;
+}
+.sivtsev p {
+	
+}
+.sight01 {
+    font-size: 6.3em;
+    letter-spacing: 0.95em;    
+}
+.sight02 {
+    font-size: 5.8em;    
+    line-height: 2.28em;
+    letter-spacing: 0.34em
+}
+.sight03 {
+    font-size: 5.1em;
+    line-height: 1.05em;
+    letter-spacing: 0.08em;
+}
+.sight04 {
+    font-size: 4.4em;
+    line-height: 2.6em;
+    letter-spacing: 0.07em;
+}
+.sight05 {
+    font-size: 4.0em;
+    line-height: 0.95em;
+    letter-spacing: 0.12em;
+}
+.sight06 {
+    font-size: 3.4em;
+    line-height: 2.85em;
+    letter-spacing: 0.11em;
+}
+.sight07 {
+    font-size: 2.5em;
+    line-height: 0.8em;
+    letter-spacing: 0.36em;
+}
+.sight08 {
+    font-size: 2em;
+    line-height: 4em;
+    letter-spacing: 0.4em;
+}
+.sight09 {
+    font-size: 1.3em;
+    line-height: 0.1em;
+    letter-spacing: 0.94em;
+}
+.sight10 {
+    font-size: 1.em;
+    line-height: 6.4em;
+    letter-spacing: 1.13em;
+}
+.uline {
+    margin-top: -1.66em;
+	border-top: 2px solid rgba(255,0,0,0.2);
+    width: 380px;
+}
+.sight15 {
+    font-size: 0.6em;
+    line-height: 4.8em;
+    letter-spacing: 2.22em;
+}
+.sight20 {
+	font-size: 0.55em;
+    line-height: 4.3em;
+    letter-spacing: 2.54em;
+}
