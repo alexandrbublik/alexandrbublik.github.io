@@ -1,7 +1,6 @@
 *{
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    padding: 0;    
 }
 .clear::after{
     content: '';
@@ -24,16 +23,43 @@ font-family: 'Open Sans', sans-serif;
 }
 /*Adding Fonts End*/
 
+.wrapper {
+	width: 1200px;
+    margin: 0 auto;
+    border: 1px solid gray;
+}
+
+/*Header*/
 /*Logo*/
 .logo{
     text-transform: uppercase;
     color: #3070a8;
     font-family: 'Futura Md BT', Arial, sans-serif;
     font-size: 36px;
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid black;
 }
 .logo span{
     font-family: 'Futura Bk BT', Arial, sans-serif;
     color: #ee8129;
     text-transform: capitalize;
 }
-/*****/
+/**End Logo***/
+
+/*Navigaton*/
+nav{
+    border: 1px solid black;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.menu_item{
+	display: inline-block;
+    text-transform: uppercase;
+    
+}
+.menu_item a{
+	text-decoration: none;
+}
+/*End Navigaton*/
