@@ -10,10 +10,10 @@
 }
 
 /*Adding Fonts*/
-@font-face{
-    font-family: 'Poiret One';
-    src: url('Fonts/PoiretOne-Regular.ttf');
-}
+/*
+font-family: 'Poiret One', cursive;
+font-family: 'Open Sans', sans-serif;
+*/
 @font-face{
     font-family: 'Futura Bk BT';
     src: url('Fonts/FuturaBkBT.ttf');
