@@ -125,3 +125,8 @@ nav{
 
 /*end banner*/
 
+#about{
+    width: 1024px;
+    margin: 0 auto;
+    text-align: justify;
+}
