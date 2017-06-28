@@ -52,6 +52,9 @@ nav{
     border: 1px solid black;
     display: inline-block;
     vertical-align: top;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 14px;   
 }
 
 .menu_item{
@@ -61,5 +64,9 @@ nav{
 }
 .menu_item a{
 	text-decoration: none;
+    color: #888c94;
+}
+a.active {
+	color: #3070a8;
 }
 /*End Navigaton*/
