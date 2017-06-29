@@ -123,6 +123,10 @@ nav{
     padding: 8px 60px;
 }
 
+.banner_btn:hover {
+	background-color: rgba(47, 82, 112, 0.5);
+}
+
 /*end banner*/
 
 #about{
