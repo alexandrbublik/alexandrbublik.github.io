@@ -11,12 +11,14 @@ $(".menu_item a").click(function(event) {
         var top = $(id).offset().top;
         //анимируем переход на расстояние - top за 1500 мс
         $('body,html').animate({scrollTop: top}, 1500);
-    };
+    }else{
+        //анимируем переход на верх страницы за 1500 мс
+        $('body,html').animate({scrollTop: 0}, 1500);
+    }
 });
 
 $(document).ready(function(){
         var $menu = $("div#header_wrapper");
-        console.log($menu);
         $(window).scroll(function(){
             if ( $(this).scrollTop() > 100 && $menu.hasClass("default") ){
                 $menu.removeClass("default").addClass("header_fixed");
