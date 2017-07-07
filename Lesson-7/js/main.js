@@ -13,3 +13,15 @@ $(".menu_item a").click(function(event) {
         $('body,html').animate({scrollTop: top}, 1500);
     };
 });
+
+$(document).ready(function(){
+        var $menu = $("div#header_wrapper");
+        console.log($menu);
+        $(window).scroll(function(){
+            if ( $(this).scrollTop() > 100 && $menu.hasClass("default") ){
+                $menu.removeClass("default").addClass("header_fixed");
+            } else if($(this).scrollTop() <= 100 && $menu.hasClass("header_fixed")) {
+                $menu.removeClass("header_fixed").addClass("default");
+            }
+        });//scroll
+    });
