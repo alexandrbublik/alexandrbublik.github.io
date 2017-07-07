@@ -32,6 +32,7 @@ header{
     width: 1024px;
     margin: 0 auto;
     min-height: 116px;
+	transition: all 0.3s ease-in-out;
 }
 /*Logo*/
 .logo {
@@ -82,6 +83,35 @@ nav{
 	color: #3070a8;
     border-bottom: 5px solid;
 }
+
+
+/* FIXED HEADER STYLE */
+div.header_fixed {
+    position:fixed;
+    top:0; 
+	left:0;
+	right:0;
+    width:100%;
+	margin: 0 auto;
+	background-color: #FFFFFF;
+}
+.header_fixed header {
+    width: 1024px;
+    margin: 0 auto;
+}
+.header_fixed header {
+	min-height: 20px;
+}
+.header_fixed .logo{
+	margin: 5px 0;
+}
+.header_fixed nav{
+	margin-top: 10px;
+}
+.header_fixed .menu_item a{
+    padding: 20px 20px;
+}
+
 /*End Navigaton*/
 /*End header*/
 
