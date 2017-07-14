@@ -21,7 +21,7 @@ $(document).ready(function(){
         var $menu = $("div#header_wrapper");
         $(window).scroll(function(){
             if ( $(this).scrollTop() > 100 && $menu.hasClass("default") ){
-                $menu.removeClass("default").addClass("header_fixed");
+            $menu.fadeOut('fast',function(){    $menu.removeClass("default").addClass("header_fixed");})
             } else if($(this).scrollTop() <= 100 && $menu.hasClass("header_fixed")) {
                 $menu.removeClass("header_fixed").addClass("default");
             }

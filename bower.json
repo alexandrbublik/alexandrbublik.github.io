@@ -1,0 +1,23 @@
+{
+  "name": "alexandrbublik.github.io",
+  "homepage": "https://github.com/alexandrbublik/alexandrbublik.github.io",
+  "authors": [
+    "alexandrbublik <boulder17alexandrbublik@gmail.com>"
+  ],
+  "description": "description Test bower",
+  "main": "mainfile.html",
+  "keywords": [
+    "keywords"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}
