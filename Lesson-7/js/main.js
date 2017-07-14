@@ -21,9 +21,13 @@ $(document).ready(function(){
         var $menu = $("div#header_wrapper");
         $(window).scroll(function(){
             if ( $(this).scrollTop() > 100 && $menu.hasClass("default") ){
-            $menu.fadeOut('fast',function(){    $menu.removeClass("default").addClass("header_fixed");})
+                $menu.fadeOut('fast',function(){
+                    $(this).removeClass("default").addClass("header_fixed").fadeIn('fast');
+                });
             } else if($(this).scrollTop() <= 100 && $menu.hasClass("header_fixed")) {
-                $menu.removeClass("header_fixed").addClass("default");
+                $menu.fadeOut('fast', function(){
+                    $(this).removeClass("header_fixed").addClass("default").fadeIn('fast');    
+                });                
             }
         });//scroll
     });
