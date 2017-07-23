@@ -10,6 +10,11 @@
 body{
     background: url(../img/body_bg.jpg) no-repeat 50% 3px;
     color: white;
+    min-width: 960px;
+    font-weight: 700;
+    font-size:14px;
+    font-family: 'PT Sans Narrow', 'Arial', sans-serif;
+    text-transform: uppercase;
 }
 header{
     margin-bottom: 60px;
