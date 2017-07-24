@@ -170,25 +170,73 @@ body {
 	margin-top: 65px;
     padding-top: 60px;
     padding-bottom: 40px;
+    color: #ffffff;
+    background: #252525 url("../img/pattern-black.gif");
 }
 .footer-contacts {
     margin-right: 60px;
 	float: left;
     width: 320px;
 }
+.footer-contacts a {
+	color: #ffffff;
+}
+.footer-contacts a:hover {
+    text-decoration: none;
+}
 .footer_social {
 	float: left;
     width: 180px;
+    text-align: center;
+}
+.footer_social p {
+	margin: 0;
+    margin-bottom: 15px;
 }
 .footer-copyright {
 	float: right;
-    width: 180px;
+    max-width: 180px;
 }
-input{
-    width: 140px;    
+.footer-copyright p {
+	margin: 0;
+    margin-bottom: 15px;
+    text-align: center;
 }
-input:nth-child(odd){
-    margin-right: 20px;
+.footer-copyright .btn{
+	margin-right: 0;
+}
+.social-btn {
+	display: inline-block;
+    vertical-align: top;
+    font-size: 0;
+    text-decoration: none;
+    width: 43px;
+    height: 43px;
+    margin: 0 2px;
+    background: #000000 url(../img/social-sprite.png) no-repeat;
+    background-position: -5px -5px;
+    transition: background-position 0.5s, background-color 0.5s;
+}
+.social-btn:hover {
+	background-color: #ffffff;
+}
+.social-btn-vk {
+	background-position: -5px -270px;
+}
+.social-btn-fb {
+	background-position: -5px -58px;
+}
+.social-btn-inst {
+	background-position: -5px -164px;
+}
+.social-btn-vk:hover {
+	background-position: -5px -323px;
+}
+.social-btn-fb:hover {
+	background-position: -5px -111px;
+}
+.social-btn-inst:hover {
+	background-position: -5px -217px;
 }
 .btn {
     display: inline-block;
@@ -207,4 +255,69 @@ input:nth-child(odd){
     border: none;
     outline: none;
     cursor: pointer;
+}
+.btn:hover,
+.btn:active {
+	background-color: #663d15;
+}
+.btn.disabled,
+.btn:disabled {
+    cursor: default;
+    opacity: 0.5;
+}
+.btn.disabled:hover,
+.btn:disabled:hover{
+    background-color: #000000;
+}
+.gallery {
+	position: relative;
+    height: 260px;
+}
+.gallery-content {
+	height: 164px;
+    margin: 0;
+    background-color: #cccccc;
+    border: 7px solid #ffffff;
+}
+.gallery-content img {
+	width: 286px;
+    height: 164px;    
+}
+.gallery .btn {
+    position: absolute;
+    bottom: 0;
+    width: 140px;
+    margin: 0;
+}
+.gallery-prev {
+	left: 0;
+}
+.gallery-next {
+	right: 0;
+}
+.appointment-form input {
+    width: 106px;
+    padding: 7px 15px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    float: left;
+	background-color: #f9f6f3;
+    border: 2px solid #000000;
+    outline: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'PT Sans Narrow', 'Arial', sans-serif;
+    color: #000000;
+    text-transform: uppercase;
+}
+.appointment-form input:nth-child(2n){
+	margin-right: 0;
+}
+.appointment-form input:focus {
+	border: 2px solid #663d15;
+}
+.appointment-form .btn{
+	clear: both;
+    width: 100%;
 }
