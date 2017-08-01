@@ -429,7 +429,7 @@ body {
 }
 .big-heading h2 {
 	position: relative;
-    display: inline;
+    display: inline-block;
     z-index: 2;
     margin: 0;
     padding: 0 25px;
@@ -445,4 +445,57 @@ body {
     top: -25px;
     z-index: 1;
     border-bottom: 2px solid #000000;
+}
+.custom-list-1 {
+	margin: 14px 0;
+    padding: 0;
+    list-style: none;
+}
+.custom-list-1 li {
+	position: relative;
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+.custom-list-1 li::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: 8px;
+    left: 0;
+    background-color: #000000;
+    transform: rotate(45deg);
+}
+.prices-table {
+	width: 100%;
+}
+.prices-table td {
+	width: 50%
+}
+.prices-table td:last-child {
+	text-align: center;
+}
+.inner-columns {
+	margin: 60px 0;
+}
+.inner-column-left,
+.inner-column-right {
+	width: 460px;
+}
+.inner-column-left {
+	float: left;
+}
+.inner-column-right {
+	float: right;
+}
+.inner-column-left *:first-child,
+.inner-column-right *:first-child {
+	margin-top: 0;
+}
+.inner-column-left *:last-child,
+.inner-column-right *:last-child {
+	margin-bottom: 0;
+}
+.short-text {
+	padding-right: 80px;
 }
