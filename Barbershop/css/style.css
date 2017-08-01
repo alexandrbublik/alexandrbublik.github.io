@@ -13,10 +13,57 @@ body {
     font-family: 'PT Sans Narrow', 'Arial', sans-serif;
     text-transform: uppercase;
 }
+.inner-page {
+	color: #000000;
+    background: #f8f3f0 url("../img/white-pattern.png") repeat;
+}
 .main-header {
 	margin-bottom: 60px;
     color: #FFFFFF;
     background-color: #000000;
+}
+.inner-page .main-header{
+	margin-bottom: 55px;
+}
+.inner-page-title h1 {
+	margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    font-size: 30px;
+    line-height: 42px;
+}
+.breadcrumbs {
+	margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.breadcrumbs li {
+	position: relative;
+    display: inline;
+    padding-right: 40px;
+}
+.breadcrumbs a {
+	color: #000000;
+    text-decoration: none;
+}
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+.breadcrumbs .current {
+	color: #aba9a7;
+}
+.breadcrumbs li::after {
+	content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: 4px;
+    right: 18px;
+    background-color: #000000;
+    transform: rotate(45deg);
+}
+.breadcrumbs li.current::after {
+    display: none;
 }
 .container,
 .main-container {	
@@ -49,6 +96,41 @@ body {
 .main-navigation a:hover {
 	background-color: #242424;
 }
+.main-navigation .logo-inner {
+	float: left;
+    width: 111px;
+    height: 24px;
+    padding-top: 22px;
+}
+.main-navigation .logo-inner img{
+	width: 111px;
+    height: 24px;
+}
+.main-navigation .logo-inner:hover {
+    background: none;
+}
+.main-navigation .active{
+	position: relative;
+    background-color: none;   
+}
+.main-navigation .active::after{
+    content: "";
+    position: absolute;
+    right: 20px;
+    bottom: -1px;
+    left: 20px;   
+    height: 5px;
+    background-color: #ffffff;
+}
+.main-navigation .active a{
+    background: none;
+}
+.main-navigation .active span{
+    display: block;
+    padding: 25px 20px;
+}
+
+
 .user-block {
 	max-width: 140px;
     float: right;
