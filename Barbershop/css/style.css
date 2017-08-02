@@ -499,3 +499,13 @@ body {
 .short-text {
 	padding-right: 80px;
 }
+.modal-content {
+    position: absolute;
+    top: 120px;
+    left: 50%;
+	width: 300px;
+    padding: 50px 80px;
+    margin-left: -230px;
+    color: #000000;
+    background: #f8f3f0 url("../img/white-pattern.png");
+}
