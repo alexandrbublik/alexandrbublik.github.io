@@ -120,5 +120,14 @@
     </footer>
     <div class="modal-content">
     <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button></div>
+    <script>
+        var link = document.querySelector(".login");
+        var popup= document.querySelector(".modal-content");
+        link.addEventListener("click", function(event){
+            event.preventDefault();           
+            popup.classList.add("modal-content-show");
+        });
+        
+    </script>
 </body>
 </html>
