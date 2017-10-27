@@ -501,7 +501,7 @@ body {
 }
 /*Всплывающая форма*/
 .modal-content {
-    -display: none;
+    display: none;
     position: absolute;
     top: 120px;
     left: 50%;
@@ -586,4 +586,58 @@ body {
 	background-image: url('../img/login-sprites.png');
     background-repeat: no-repeat;
     background-position:  95% 14px;
+}
+.login-form .restore {
+	float: right;
+    color: #000;
+}
+.login-form .btn{
+	width: 100%;
+    margin-top: 15px;
+}
+.login-checkbox input[type="checkbox"]{
+	display: none;
+}
+.login-checkbox {
+	position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+}
+.login-checkbox:hover {
+	color: #663d15;
+}
+.login-checkbox input[type="checkbox"] + .checkbox-indicator{
+    position: absolute;
+	top: -3px;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    border: 2px solid #000;
+}
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after,
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before{
+	content: "";
+    position: absolute;
+    top: 8px;
+    left: 1px;
+    width: 15px;
+    height: 2px;
+    background-color: #000;   
+}
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after{
+    transform: rotate(45deg);
+}
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before{
+    transform: rotate(-45deg);
+}
+.modal-content-map {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+	width: 766px;
+    height: 561px;
+    margin-top: -280px;
+    margin-left: -390px;
+    background: #e9e5dc url("../img/map.png");
+    border: 7px solid white;
 }
