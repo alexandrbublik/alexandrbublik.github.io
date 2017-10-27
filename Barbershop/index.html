@@ -103,7 +103,7 @@
             <section class="footer-contacts">
                 Barbershop "Borodinsky"<br>
                 Adress: Kyiv, Shevchenko str. 10/5<br>
-                <a href="#">Как нас найти?</a><br>
+                <a href="#" class="view-map">Как нас найти?</a><br>
                 Phone: +3 (044) 515-23-78
             </section>
             <section class="footer_social">
@@ -149,6 +149,18 @@
         close.addEventListener("click", function(event){
             event.preventDefault();
             popup.classList.remove("modal-content-show");
+        });
+        
+        var link = document.querySelector(".view-map");
+        var popup= document.querySelector(".modal-content-map");
+        var close = document.querySelector(".modal-content-map");
+        link.addEventListener("click", function(event){
+            event.preventDefault();           
+            popup.classList.add("modal-content-map-show");
+        });
+        close.addEventListener("click", function(event){
+            event.preventDefault();
+            popup.classList.remove("modal-content-map-show");
         });
         
     </script>
