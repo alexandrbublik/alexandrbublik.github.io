@@ -146,11 +146,16 @@
         var login = popup.querySelector("[name=login]");
         var password = popup.querySelector("[name=password]");
         var form = popup.querySelector("form");
+        var storage = localStorage.getItem("login");
         
         link.addEventListener("click", function(event){
             event.preventDefault();           
             popup.classList.toggle("modal-content-show");
             login.focus();
+            if (storage){
+                login.value = storage;
+                password.focus();
+            };
         });
         
         close.addEventListener("click", function(event){
@@ -162,6 +167,8 @@
             if (!login.value || !password.value){
                 event.preventDefault();
                 console.log("Nuzhno vvesti login i parol");
+            } else {
+                localStorage.setItem("login", login.value);
             };
         });
     </script>
