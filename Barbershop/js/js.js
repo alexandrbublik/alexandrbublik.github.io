@@ -67,5 +67,12 @@ mapLink.addEventListener("click", function(event){
     overlay.classList.add("modal-overlay-show");
 });
 
+var mapLink2 = document.querySelector(".js-open-map-2");
+mapLink2.addEventListener("click", function(event){
+    event.preventDefault();           
+    mapPopup.classList.add("modal-content-show");
+    overlay.classList.add("modal-overlay-show");
+});
+
 closePopup( mapClose, mapPopup);
 closePopup( mapOverlay, mapPopup);
