@@ -1,0 +1,27 @@
+.main-nav {
+    width: 320px;
+    margin: 0 auto;
+}
+
+.main-nav__items,
+.main-nav__user-items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-nav__items {
+    min-height: 255px;
+}
+
+.main-nav__user-items {
+    min-height: 55px;
+}
+
+@media #{$tablet-width} {
+    .main-nav {
+        width: auto;
+        min-height: 70px;
+        margin: 0;
+    }
+}

@@ -5,3 +5,6 @@ body {
   color: #f7f4f1;
   font-style: normal;
   background-color: #292929; }
+
+.visually-hidden {
+  display: none; }
